@@ -1,0 +1,82 @@
+@media only screen and (max-width: 750px) {
+   .topBar{
+    display: none !important;
+   }
+   .menu__items{
+    display: none !important;
+   }
+   .slider{
+    .slider__advertise{
+        display: none !important;
+    }
+   }
+   .brands{
+    &__item{
+        overflow-x: hidden;
+    }
+   }
+   .category{
+    display: grid !important;
+   }
+   .productSlideShow{
+        &__products{
+            &__item{
+                width: 65% !important;
+                display: none !important;
+                &.mobileShow{
+                    display: block !important;
+                }
+            }
+        }
+   }
+   .offerProducts__productSlideShow{
+    &__item{
+        display: none !important;
+        &.mobileShow{
+            display: block !important;
+        }
+    }
+   }
+   .offerProducts{
+    display: grid !important;
+    &__descriptiopn{
+        width: auto !important;
+        padding: 15px !important;
+    }
+    &__productSlideShow{
+        width: auto !important;
+        margin: 30px auto !important;
+    }
+   }
+   .bannerSection{
+    display: grid !important;
+    gap: 15px;
+    img{
+        width: 100% !important;
+    }
+   }
+   footer{
+    position: unset !important;
+    margin-top: 25px !important;
+    background-color: transparent !important;
+    .footerConten{
+        position: unset !important;
+        display: grid !important;
+        width: unset !important;
+        .aboutUs{
+            width: auto !important;
+            .socialIcons{
+                justify-content: space-between;
+            }
+        }
+        .usefulLink{
+            width: unset !important;
+            justify-content: unset !important;
+        }
+        .trustSection{
+            width: unset !important;
+            display: grid;
+        }
+    }
+   }
+}
