@@ -173,23 +173,22 @@ body {
         margin: 30px 0;
         text-align: center;
         align-items: center;
-        &__item{
-            width: calc(20% - 45px);
-            .image{
-                background-color: #F1F4FB;
-                border-radius: 35px;
-                padding: 30px;
-                display: grid;
-                gap: 15px;
-                justify-content: center;
-            }
-            .content{
-                margin: 30px 0;
-                display: grid;
-                gap: 15px;
-                &__price{
-                    color: #A1A1A1;
-                }
+    }
+    &__products__item{
+        .image{
+            background-color: #F1F4FB;
+            border-radius: 35px;
+            padding: 30px;
+            display: grid;
+            gap: 15px;
+            justify-content: center;
+        }
+        .content{
+            margin: 30px 0;
+            display: grid;
+            gap: 15px;
+            &__price{
+                color: #A1A1A1;
             }
         }
     }
@@ -322,4 +321,9 @@ footer{
             }
         }
     }
+}
+.rec.rec-arrow {
+    border-radius: 10px;
+    background-color: #6342E8;
+    color: white;
 }

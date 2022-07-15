@@ -1,10 +1,9 @@
 @media only screen and (max-width: 750px) {
-   .topBar{
-    display: none !important;
-   }
-   .menu__items{
-    display: none !important;
-   }
+    .mobileTopBar{
+        .topBar__logo{
+            width: 100%;
+        }
+    }
    .slider{
     .slider__advertise{
         display: none !important;
@@ -18,25 +17,6 @@
    .category{
     display: grid !important;
    }
-   .productSlideShow{
-        &__products{
-            &__item{
-                width: 65% !important;
-                display: none !important;
-                &.mobileShow{
-                    display: block !important;
-                }
-            }
-        }
-   }
-   .offerProducts__productSlideShow{
-    &__item{
-        display: none !important;
-        &.mobileShow{
-            display: block !important;
-        }
-    }
-   }
    .offerProducts{
     display: grid !important;
     &__descriptiopn{
@@ -44,7 +24,7 @@
         padding: 15px !important;
     }
     &__productSlideShow{
-        width: auto !important;
+        width: 100% !important;
         margin: 30px auto !important;
     }
    }

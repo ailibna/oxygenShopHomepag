@@ -3,6 +3,16 @@ import BoxPic from '../../assets/images/Mask Group 61.png';
 import TimerRemind from './timerRemind';
 import OfferProductItems from './items';
 import WishListIcon from '../../assets/images/Group 1232.svg';
+
+import Carousel from 'react-elastic-carousel';
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
 function OfferProductSection () {
     return(
         <div className="offerProducts">
@@ -17,6 +27,7 @@ function OfferProductSection () {
                 <TimerRemind />
             </div>
             <div className="offerProducts__productSlideShow">
+            <Carousel breakPoints={breakPoints} showArrows={false} pagination={false}>
                 {
                     OfferProductItems.map((e, index)=>{
                         return(
@@ -33,6 +44,7 @@ function OfferProductSection () {
                         )
                     })
                 }
+            </Carousel>
             </div>
         </div>
     )

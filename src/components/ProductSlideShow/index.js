@@ -1,6 +1,13 @@
-import PrevButton from '../../assets/images/Path 2410.svg'
-import nextButton from '../../assets/images/Path 2409.svg'
 import AddToWishListIcon from '../../assets/images/Group 1232.svg'
+import Carousel from 'react-elastic-carousel';
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 4 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
 function productSlideShow(props) {
     return(
         <div className="productSlideShow">
@@ -9,7 +16,7 @@ function productSlideShow(props) {
             <button className="showMore">محصولات بيشتر …</button>
         </div>
         <div className="productSlideShow__products">
-            <img className="nextPrevItems" src={PrevButton} alt="" />
+            <Carousel breakPoints={breakPoints} pagination={false}>
             {
                 props.products.map((e, index)=>{
                     return(
@@ -26,7 +33,7 @@ function productSlideShow(props) {
                     )
                 })
             }
-            <img className="nextPrevItems" src={nextButton} alt="" />
+            </Carousel>
         </div>
     </div>
     )
